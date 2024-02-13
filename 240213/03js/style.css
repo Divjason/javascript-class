@@ -1,0 +1,21 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#container {
+  width: 400px;
+  padding: 40px;
+  border: 1px solid #ddd;
+}
+#container #today {
+  margin-bottom: 30px;
+}
