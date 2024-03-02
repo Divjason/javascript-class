@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer type="module" src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form name="testForm" action="https://localhost:3000" method="post">
+        <h1>상품목록</h1>
+        <input type="submit" value="상품 목록 불러오기" />
+        <select name="category">
+          <option selected disabled>필터를 선택하세요</option>
+          <option value="life">생활용품</option>
+          <option value="it">전자기기</option>
+          <option value="book">도서/문구</option>
+        </select>
+      </form>
+      <ul></ul>
+    </div>
+  </body>
+</html>
