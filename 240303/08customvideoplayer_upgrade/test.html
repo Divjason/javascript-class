@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #videoContainer {
+        position: relative;
+        width: 500px;
+        height: 300px;
+        background-color: #333;
+      }
+      #progressBar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background-color: #fff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="videoContainer">
+      <video id="video" width="100%" height="100%" controls>
+        <source src="./sample.mp4" type="video/mp4" />
+      </video>
+      <div id="progressBar">test</div>
+    </div>
+
+    <script>
+      const progressBar = document.getElementById("progressBar");
+      const video = document.getElementById("video");
+
+      progressBar.addEventListener("click", (e) => {
+        const mouseX = e.pageX - progressBar.offsetLeft;
+        console.log(mouseX);
+        const width = progressBar.clientWidth;
+        const duration = video.duration;
+        const clickedTime = (mouseX / width) * duration;
+        video.currentTime = clickedTime;
+      });
+    </script>
+  </body>
+</html>
