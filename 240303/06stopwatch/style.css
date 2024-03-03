@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.time {
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+}
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+button {
+  width: 100px;
+  padding: 15px;
+  border: none;
+}
