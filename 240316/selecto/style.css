@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --main-color: #ff4a13;
+  --backgound-color: #f7f6f3;
+  --map-background-color: #f2f1ed;
+  --map-border-color: #dfdfe0;
+}
+
+body {
+  background: var(--backgound-color);
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 80%;
+  height: 200vh;
+  padding-top: 80px;
+}
+.headtitles {
+  width: 100%;
+  color: var(--main-color);
+}
+.subtitle {
+  margin: 40px auto;
+  padding-top: 5px;
+  width: 80px;
+  text-align: center;
+  border-top: 1px solid var(--main-color);
+  opacity: 0.5;
+}
+.shopsearch {
+  width: 90%;
+  max-width: 1200px;
+  height: 450px;
+  margin: 0 auto;
+  border-top: 1px solid var(--map-border-color);
+  border-bottom: 1px solid var(--map-border-color);
+  display: flex;
+}
+.shopsearch_map {
+  width: 50%;
+  background: var(--map-background-color)
+    url("https://www.selecto.co.kr/assets/images/main/storeinfo-location/c-location-map.png")
+    center/cover no-repeat;
+}
+.shopsearch_filter {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--main-color);
+  padding: 50px 70px;
+}
+.shopsearch_filter .section {
+  display: flex;
+  flex-direction: column;
+}
+.shopsearch_filter .section h2 {
+  margin-bottom: 24px;
+  font-size: 1rem;
+  letter-spacing: -1px;
+}
+.shopsearch_filter .section p {
+  margin-bottom: 10px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+.shopsearch_filter .section label {
+  letter-spacing: -2px;
+}
+.shopsearch_filter .section:first-child label {
+  font: bold 0.9rem/1 "arial";
+  display: inline-block;
+  width: 75px;
+}
+.shopsearch_filter .section select {
+  width: 136px;
+  height: 36px;
+  margin-right: 8px;
+  border: 1px solid var(--map-border-color);
+  border-radius: 6px;
+  padding: 0 6px;
+  background: transparent;
+  color: var(--main-color);
+}
+.shopsearch_filter .section select:focus {
+  outline: none;
+}
+.shopsearch_filter .section option {
+  color: #000;
+}
+.shopsearch_filter .section input[type="text"] {
+  width: 236px;
+  height: 36px;
+  border: 1px solid var(--map-border-color);
+  border-radius: 6px;
+  background: transparent;
+  margin-right: 8px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+.shopsearch_filter .section input[type="text"]:focus {
+  outline: none;
+}
+.shopsearch_filter .section span {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  /* text-indent: -9999px; */
+  border-radius: 6px;
+  background: var(--main-color);
+}
+.shopsearch_filter .section span i {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 36px;
+}
+.shopsearch_filter .section:last-child p {
+  margin-bottom: 20px;
+}
+.shopsearch_filter .section:last-child label {
+  width: 160px;
+  margin-left: 8px;
+  font: bold 0.9rem/1 "arial";
+}
+.shopsearch_filter .section:last-child label i {
+  margin-right: 10px;
+}
+.shopsearch_filter .section input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  margin-right: 6px;
+  appearance: none;
+  position: relative;
+}
+.shopsearch_filter .section input[type="checkbox"]::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: 1px solid var(--map-border-color);
+  border-radius: 2px;
+}
+.shopsearch_filter .section input[type="checkbox"]:checked::before {
+  content: "\2713";
+  background: var(--main-color);
+  color: #fff;
+  border: none;
+  text-align: center;
+}
