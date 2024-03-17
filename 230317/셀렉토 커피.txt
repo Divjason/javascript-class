@@ -1,0 +1,2 @@
+dispatchEvent( ) 함수 개념
+https://ko.javascript.info/dispatch-events

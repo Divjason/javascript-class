@@ -1,0 +1,80 @@
+[
+  {
+    "main_area": "강원",
+    "sub_area": "영월군",
+    "store": "영월점",
+    "address": "강원특별자치도 영월군 영월읍 청령포로 111 (방절리) 1층, 셀렉토커피 영월점",
+    "tel": "033-373-5557",
+    "service": ["fas fa-wifi", "fas fa-car", "fas fa-umbrella-beach"]
+  },
+  {
+    "main_area": "강원",
+    "sub_area": "속초시",
+    "store": "속초교동점",
+    "address": "강원 속초시 중앙로17번길 11 (교동, 미소지움 더뷰 아파트)",
+    "tel": "033-633-8500",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "강원",
+    "sub_area": "원주시",
+    "store": "원주만대공원점",
+    "address": "강원 원주시 만대공원길 8-10 (무실동)",
+    "tel": "070-7537-2135",
+    "service": [
+      "fas fa-wifi",
+      "fas fa-car",
+      "fas fa-smoking",
+      "fas fa-umbrella-beach",
+      "fas fa-mobile-button"
+    ]
+  },
+  {
+    "main_area": "강원",
+    "sub_area": "속초시",
+    "store": "속초자이점",
+    "address": "강원 속초시 조양로 181 (조양동, 속초 자이아파트)",
+    "tel": "033-638-7757",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "강원",
+    "sub_area": "원주시",
+    "store": "원주기업도시점",
+    "address": "강원 원주시 지정면 신지정로 197-5 (가곡리)",
+    "tel": "033-732-6222",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "강원",
+    "sub_area": "원주시",
+    "store": "원주흥업점",
+    "address": "강원 원주시 흥업면 흥업리 585-11",
+    "tel": "033-761-2022",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "강원",
+    "sub_area": "강릉시",
+    "store": "강릉솔올점",
+    "address": "강원 강릉시 하슬라로 197 (교동)",
+    "tel": "033-655-7179",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "제주",
+    "sub_area": "제주시",
+    "store": "제주도남점",
+    "address": "제주특별자치도 제주시 도남로 53 (도남동) 1층 셀렉토커피 제주도남점",
+    "tel": "064-725-2477",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "제주",
+    "sub_area": "제주시",
+    "store": "제주노형점",
+    "address": "제주특별자치도 제주시 노연로 48 (노형동) 1층",
+    "tel": "070-7699-0239",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  }
+]

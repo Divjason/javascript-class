@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/3f2ea24883.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer type="module" src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="headtitles">
+        <h1 class="title">매장안내</h1>
+        <h3 class="subtitle">매장찾기</h3>
+      </div>
+      <div class="shopsearch">
+        <div class="shopsearch_map">
+          <div id="인천" class="shopsearch_map_area area_incheon">인천</div>
+          <div id="서울" class="shopsearch_map_area area_seoul">서울</div>
+          <div id="경기" class="shopsearch_map_area area_gyeonggido">
+            경기도
+          </div>
+          <div id="강원" class="shopsearch_map_area area_gangwondo">강원도</div>
+          <div id="충북" class="shopsearch_map_area area_chungcheongbukdo">
+            충청북도
+          </div>
+          <div id="세종" class="shopsearch_map_area area_sejong">세종</div>
+          <div id="충남" class="shopsearch_map_area area_chungcheongnamdo">
+            충청남도
+          </div>
+          <div id="대전" class="shopsearch_map_area area_daejeon">대전</div>
+          <div id="전북" class="shopsearch_map_area area_jeollabukdo">
+            전라북도
+          </div>
+          <div id="전남" class="shopsearch_map_area area_jeollanamdo">
+            전라남도
+          </div>
+          <div id="광주" class="shopsearch_map_area area_gwangju">광주</div>
+          <div id="경북" class="shopsearch_map_area area_gyeongsangbukdo">
+            경상북도
+          </div>
+          <div id="대구" class="shopsearch_map_area area_daegu">대구</div>
+          <div id="울산" class="shopsearch_map_area area_ulsan">울산</div>
+          <div id="경남" class="shopsearch_map_area area_gyeongsangnamdo">
+            경상남도
+          </div>
+          <div id="부산" class="shopsearch_map_area area_busan">부산</div>
+          <div id="제주" class="shopsearch_map_area area_jeju">제주도</div>
+        </div>
+        <div class="shopsearch_filter">
+          <div class="section">
+            <h2>01 지역/매장별 검색</h2>
+            <form
+              name="mapsearch"
+              action="https://localhost:3000/map.js"
+              method="post"
+            >
+              <p>
+                <label for="localsearch">지역검색</label>
+                <select name="city" id="city">
+                  <option disabled selected>도/시 선택</option>
+                  <option value="강원">강원</option>
+                  <option value="경기">경기</option>
+                  <option value="경남">경남</option>
+                  <option value="경북">경북</option>
+                  <option value="광주">광주</option>
+                  <option value="대구">대구</option>
+                  <option value="대전">대전</option>
+                  <option value="부산">부산</option>
+                  <option value="서울">서울</option>
+                  <option value="세종">세종</option>
+                  <option value="울산">울산</option>
+                  <option value="인천">인천</option>
+                  <option value="전남">전남</option>
+                  <option value="전북">전북</option>
+                  <option value="제주">제주</option>
+                  <option value="충남">충남</option>
+                  <option value="충북">충북</option>
+                </select>
+                <select name="state" id="state">
+                  <option>구/군 선택</option>
+                </select>
+              </p>
+              <p>
+                <label for="storename">매장명</label>
+                <input type="text" />
+                <span><i class="fas fa-magnifying-glass"></i></span>
+              </p>
+            </form>
+          </div>
+          <div class="section">
+            <h2>02 매장 서비스별 검색</h2>
+            <form
+              class="optionMode"
+              name="mapsearch"
+              action="https://localhost:3000/map.js"
+              method="post"
+            >
+              <p>
+                <input
+                  type="checkbox"
+                  name="wifi"
+                  id="fa-wifi"
+                  class="filter-checkbox"
+                  value="fas fa-wifi"
+                />
+                <label for="fa-wifi"
+                  ><i class="fas fa-wifi"></i>무선인터넷 가능</label
+                >
+                <input
+                  type="checkbox"
+                  name="smoking"
+                  id="fa-smoking"
+                  class="filter-checkbox"
+                  value="fas fa-smoking"
+                />
+                <label for="fa-smoking"
+                  ><i class="fas fa-smoking"></i>흡연시설 보유</label
+                >
+              </p>
+              <p>
+                <input
+                  type="checkbox"
+                  name="parking"
+                  id="fa-car"
+                  class="filter-checkbox"
+                  value="fas fa-car"
+                />
+                <label for="fa-car"><i class="fas fa-car"></i>주차가능</label>
+                <input
+                  type="checkbox"
+                  name="terrace"
+                  id="fa-umbrella-beach"
+                  class="filter-checkbox"
+                  value="fas fa-umbrella-beach"
+                />
+                <label for="fa-umbrella-beach"
+                  ><i class="fas fa-umbrella-beach"></i>야외테라스 보유</label
+                >
+              </p>
+              <p>
+                <input
+                  type="checkbox"
+                  name="mobile"
+                  id="fa-mobile-button"
+                  class="filter-checkbox"
+                  value="fas fa-mobile-button"
+                />
+                <label for="fa-mobile-button"
+                  ><i class="fas fa-mobile-button"></i>모바일 가맹점</label
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="shopinfo">
+        <h1>매장 안내</h1>
+        <div class="shopinfo_table">
+          <table>
+            <thead>
+              <tr>
+                <th>매장명</th>
+                <th>지역</th>
+                <th>매장주소</th>
+                <th>매장전화번호</th>
+                <th>서비스</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <!-- <tr>
+              <td>서울역사점</td>
+              <td>서울</td>
+              <td>
+                서울 중구 한강대로 405 서울역사 지하통로(서울역 대합실 방면
+                1호선)
+              </td>
+              <td>02-652-1777</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>평택서재자이점</td>
+              <td>경기</td>
+              <td>경기 평택시 동삭동 715-1 11층</td>
+              <td>031-374-3362</td>
+              <td>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-umbrella-beach"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>청라국제도시점</td>
+              <td>인천</td>
+              <td>인천 서구 청라한내로 110(청라동) 1층</td>
+              <td>070-8657-3336</td>
+              <td>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-car"></i>
+                <i class="fas fa-smoking"></i>
+                <i class="fas fa-umbrella-beach"></i>
+                <i class="fas fa-mobile-button"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>영월점</td>
+              <td>강원</td>
+              <td>
+                강원특별자치도 영월군 영월읍 청령포로 111(방절리) 1층, 영월점
+              </td>
+              <td>033-373-5557</td>
+              <td>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-car"></i>
+                <i class="fas fa-umbrella-beach"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>창동역점</td>
+              <td>서울</td>
+              <td>서울시 도봉구 마들로 11가길 16(창동, KING프라자) 1층</td>
+              <td>02-994-0313</td>
+              <td>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-umbrella-beach"></i>
+              </td>
+            </tr> -->
+          </table>
+        </div>
+        <div class="shopinfo_pager">
+          <ul>
+            <!-- <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <span>
+              <i class="fas fa-angle-right"></i>
+            </span>
+            <span>45</span> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
