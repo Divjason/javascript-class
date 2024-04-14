@@ -1,0 +1,19 @@
+body {
+  background: url("https://sweetwaternow.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2024/04/Depositphotos_1628055_L-1-1024x686.jpg")
+    center/cover no-repeat;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+}
+.weather-box {
+  border: 3px solid #fff;
+  border-radius: 30px;
+  background: azure;
+  padding: 50px;
+}
